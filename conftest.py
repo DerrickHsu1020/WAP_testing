@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def driver(mobile_type: str = "iPhone 12 Pro"):
     """Setup chromedriver for mobile testing.
 
-    :param mobile_type: mobile model for emulationm, default = iPhone 12 Pro
+    :param mobile_type: mobile model for emulation, default value: iPhone 12 Pro
     """
     mobile_emulation = {"deviceName": mobile_type}
     options = webdriver.ChromeOptions()
