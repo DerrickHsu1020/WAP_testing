@@ -32,7 +32,7 @@ Ensure you have the following installed:
 ## Running the Tests
 To execute the test, run:
 ```bash
-pytest test_twitch.py -v --disable-warnings
+pytest test_twitch.py
 ```
 
 ## Customization
