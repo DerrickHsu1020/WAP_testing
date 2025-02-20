@@ -12,7 +12,7 @@ class TestTwitchStreaming:
     def test_twitch_streaming(self, driver) -> None:
         """Test streamer is playing and get the screen shots
 
-        :param driver: Selenium WebDriver instance
+        :param driver: fixture
         """
         # Step 1: Go to Twitch and handle potential modal
         driver.get(self.url)
@@ -44,6 +44,3 @@ class TestTwitchStreaming:
                 break
         driver.save_screenshot("stream_screenshot.png")
         assert not is_video_paused, "Test Failed, video is not start playing"
-
-if __name__ == "__main__":
-    pytest.main(["-v", "--disable-warnings"])
